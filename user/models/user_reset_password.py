@@ -8,4 +8,6 @@ class UserResetPassword(models.Model):
     expired_time = models.DateTimeField()
     last_modified_date = models.DateTimeField(auto_now=True)
 
+    class Meta:
+        db_table = 'user_reset_password'
 

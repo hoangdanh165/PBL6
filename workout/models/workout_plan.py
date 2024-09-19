@@ -8,3 +8,7 @@ class WorkoutPlan(models.Model):
     start_date = models.DateField()
     expire_date = models.DateField()
     details = models.JSONField()
+
+    class Meta:
+        db_table = 'workout_plan'
+

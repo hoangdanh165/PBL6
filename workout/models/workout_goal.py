@@ -8,4 +8,7 @@ class WorkoutGoal(models.Model):
     weight = models.FloatField()
     extra_data = models.JSONField()
 
+    class Meta:
+        db_table = 'workout_goal'
+
 

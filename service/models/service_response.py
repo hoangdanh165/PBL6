@@ -13,3 +13,7 @@ class ServiceResponse(models.Model):
             MaxValueValidator(5)
         ]
     )
+
+    class Meta:
+        db_table = 'service_response'
+

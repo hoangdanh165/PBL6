@@ -11,4 +11,7 @@ class Message(models.Model):
     is_ai = models.BooleanField(default=False)
     extra_data = models.JSONField()
     
+    class Meta:
+        db_table = 'message'
+
     

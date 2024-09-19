@@ -7,4 +7,8 @@ class Notification(models.Model):
     params = models.JSONField()
     create_url = models.TextField()
 
+    class Meta:
+        db_table = 'notification'
+
+
 

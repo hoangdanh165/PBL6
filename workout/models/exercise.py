@@ -5,3 +5,7 @@ class Exercise(models.Model):
     duration = models.IntegerField()
     repetitions = models.CharField(max_length=255)
     image_url = models.TextField()
+
+    class Meta:
+        db_table = 'exercise'
+

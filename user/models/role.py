@@ -8,3 +8,6 @@ class Role(models.Model):
 
     def __str__(self):
         return self.role_name
+
+    class Meta:
+        db_table = 'role'

@@ -13,3 +13,7 @@ class WorkoutSchedule(models.Model):
     duration = models.IntegerField()
     overview = models.TextField()
 
+    class Meta:
+        db_table = 'workout_schedule'
+
+

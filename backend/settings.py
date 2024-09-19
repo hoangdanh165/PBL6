@@ -10,9 +10,11 @@ from pathlib import Path
 dotenv_path = Path(os.getcwd() + '/config.env')
 load_dotenv(dotenv_path=dotenv_path)
 
+DEBUG= os.environ.get('DEBUG')
+
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
-ALLOWED_HOSTS = os.environ.get('ALLOWED_HOST', '').split(',')
+ALLOWED_HOSTS = os.environ.get('ALLOWED_HOSTS').split(',')
 
 DEFAULT_HOST = os.environ.get('DEFAULT_HOST', '')
 
