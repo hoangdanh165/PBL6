@@ -1,0 +1,14 @@
+# Backend config
+config.env
+jwt
+jwt.pub
+*.key
+
+# Backend output
+collectstatic
+*.sqlite3
+
+# Frontend output
+/static
+
+__pycache__
